@@ -15,7 +15,7 @@ class MinMaxScaler:
 # changing original value
     def transform(self, X_values):
         self.X_values = X_values
-        cnt = 0
+        # cnt = 0
         for i,cn in enumerate(self.classes_name):
             # down = (self.maxvalues[i] - self.minvalues[i])
             for j, x in enumerate(X_values[cn]):
