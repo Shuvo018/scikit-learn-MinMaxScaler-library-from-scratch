@@ -1,4 +1,4 @@
-class MinMax:
+class MinMaxScaler:
     # Here get min and max value
     def fit(self, X_train):
         self.classes_name = []
@@ -12,6 +12,7 @@ class MinMax:
         # print(self.minvalues)
         # print(self.maxvalues)
 
+# changing original value
     def transform(self, X_values):
         self.X_values = X_values
         cnt = 0
@@ -42,7 +43,7 @@ X = df.drop('Class label', axis=1)
 y = df['Class label']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
-scaler = MinMax()
+scaler = MinMaxScaler()
 # getting min and max
 
 # scaler.fit(X)
