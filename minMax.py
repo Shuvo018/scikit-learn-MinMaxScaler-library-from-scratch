@@ -44,7 +44,6 @@ y = df['Class label']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 scaler = MinMaxScaler()
-# getting min and max
 
 # scaler.fit(X)
 # X_scaler = scaler.transform(X)
